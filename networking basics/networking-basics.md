@@ -1,4 +1,4 @@
-# Networking Interview Prep
+# Networking Basic
 
 
 ##  1. What is Computer Networking?
@@ -274,20 +274,6 @@ Ensures:
 
 * Data privacy
 * Data integrity
-
----
-
-# Final Interview Tip
-
-Always answer in this structure:
-
-1. Definition
-2. Key points
-3. Real-world example
-
-Example:
-
-> “TCP is a reliable protocol used in web communication because it ensures data delivery.”
 
 ---
 

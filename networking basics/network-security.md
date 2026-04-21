@@ -1,4 +1,4 @@
-# Network Security Interview Prep (SDE Intern / Full-Time)
+# Network Security
 
 ---
 
