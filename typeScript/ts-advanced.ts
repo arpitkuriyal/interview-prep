@@ -25,6 +25,10 @@
 /**
  * "name" | "age"
  */
+type User = {
+  name: string;
+  age: number;
+};
 type Keys = keyof User;
 
 /**
@@ -32,8 +36,8 @@ type Keys = keyof User;
  * - To check if you understand type-level programming
  */
 
-let key: Keys = "name"; // ✅ valid
-// let key2: Keys = "email"; ❌ error (not part of User)
+let key: Keys = "name"; // valid
+// let key2: Keys = "email"; error (not part of User)
 
 /* =========================================================
    2. typeof (Type Query)
@@ -260,23 +264,6 @@ const val2 = getValue(userObj, "age");  // number
 /**
  * Why important:
  * - Used everywhere in real codebases
- */
-
-/* =========================================================
-   10. KEY INTERVIEW TAKEAWAYS
-========================================================= */
-
-/**
- * 🔥 Must remember:
- *
- * keyof → gives keys
- * typeof → gets type from variable
- * T[K] → access property type
- * mapped types → transform types
- * conditional types → logic in types
- * infer → extract types dynamically
- *
- * If you can combine these → you're in top candidates
  */
 
 export {};
