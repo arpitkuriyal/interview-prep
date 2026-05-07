@@ -26,6 +26,8 @@ func (q *Queue) Peek() int {
 	return q.arr[0]
 }
 
+// -----------------------------
+
 type MyQueue struct {
 	in  []int
 	out []int
@@ -49,6 +51,8 @@ func (q *MyQueue) Pop() int {
 	return val
 }
 
+// ---------------------------
+// We reuse freed space by overwriting elements that are no longer in the queue using circular indexing.
 type CircularQueue struct {
 	arr                   []int
 	front, size, capacity int
@@ -80,6 +84,8 @@ func (q *CircularQueue) DeQueue() bool {
 	return true
 }
 
+// ---------------------------------------------
+
 func maxSlidingWindow(nums []int, k int) []int {
 	deque := []int{}
 	result := []int{}
@@ -105,6 +111,8 @@ func maxSlidingWindow(nums []int, k int) []int {
 	return result
 }
 
+// ------------------------------------------
+
 func firstNegative(nums []int, k int) []int {
 	queue := []int{}
 	res := []int{}
@@ -129,6 +137,8 @@ func firstNegative(nums []int, k int) []int {
 	}
 	return res
 }
+
+// ----------------------------------
 
 func generateBinary(n int) []string {
 	queue := []string{"1"}
